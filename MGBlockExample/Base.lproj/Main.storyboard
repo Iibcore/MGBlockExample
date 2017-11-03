@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猴子行为：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-2S-m9k">
+                                <rect key="frame" x="41" y="101" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-tP-Kbc">
+                                <rect key="frame" x="49" y="154" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="吃"/>
+                                <connections>
+                                    <action selector="eat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZv-VS-LOo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="香蕉数量：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsC-Ha-5iT">
+                                <rect key="frame" x="41" y="63" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ3-bP-oHc">
+                                <rect key="frame" x="128" y="63" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UsC-Ha-5iT" firstAttribute="leading" secondItem="JGb-2S-m9k" secondAttribute="leading" id="4Pl-3G-dUT"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JGb-2S-m9k" secondAttribute="trailing" constant="20" symbolic="YES" id="AcW-hw-yzg"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UsC-Ha-5iT" secondAttribute="trailing" constant="20" symbolic="YES" id="MLB-JR-sAp"/>
+                            <constraint firstItem="UsC-Ha-5iT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Q8W-NX-t3z"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fJ3-bP-oHc" secondAttribute="trailing" constant="20" symbolic="YES" id="SlU-53-zpZ"/>
+                            <constraint firstItem="fJ3-bP-oHc" firstAttribute="top" secondItem="UsC-Ha-5iT" secondAttribute="top" id="abX-O4-F1H"/>
+                            <constraint firstItem="JGb-2S-m9k" firstAttribute="top" secondItem="UsC-Ha-5iT" secondAttribute="bottom" constant="17" id="sq6-E7-qJE"/>
+                            <constraint firstItem="fJ3-bP-oHc" firstAttribute="leading" secondItem="UsC-Ha-5iT" secondAttribute="trailing" id="uVh-1N-dKa"/>
+                            <constraint firstItem="UsC-Ha-5iT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="xcm-Lg-CWO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bananaLabel" destination="fJ3-bP-oHc" id="shE-Jj-fjg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
